@@ -1,6 +1,7 @@
 import React , { Component } from 'react';
-import { Text, View, Button, ToastAndroid } from 'react-native';
-import styles from './HomeScreen.style';
+import { Text, View, ToastAndroid, TouchableOpacity } from 'react-native';
+import Button from '../Button';
+import styles from './style';
 
 export default class HomeScreen extends Component {
 
@@ -17,8 +18,8 @@ export default class HomeScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-          <Button title="Broadcast" onPress={this.Broadcast} containerViewStyle={styles.mainButton}/>
-          <Button title="Listen" onPress={this.Listen} containerViewStyle={styles.mainButton}/>
+          <Button title="Broadcast" onPress={this.Broadcast.bind(this)}/>
+          <Button title="Listen" onPress={this.Listen.bind(this)}/>
       </View>
     );
   }
