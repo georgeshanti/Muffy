@@ -1,18 +1,16 @@
 import React , { Component } from 'react';
 import { Text, View, ToastAndroid, TouchableOpacity } from 'react-native';
-import Button from '../Button';
+import { Button } from '../../Components';
 import styles from './style';
 
 export default class HomeScreen extends Component {
 
   Broadcast = ()=>{
-    // console.log("Broadcasting...");
-    this.props.navigation.navigate('Broadcast');
+    this.props.navigation.navigate('BroadcastSetup');
   }
 
   Listen = ()=>{
-    // console.log("Listening...");
-    this.props.navigation.navigate('Listen');
+    this.props.navigation.navigate('ListenSetup');
   }
 
   render() {

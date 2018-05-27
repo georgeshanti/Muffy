@@ -1,9 +1,3 @@
-import HomeScreen from './HomeScreen';
-import BroadcastScreen from './BroadcastScreen';
-import ListenScreen from './ListenScreen';
+import Button from './Button';
 
-
-module.exports = { 
-    HomeScreen,
-    BroadcastScreen,
-    ListenScreen, };
+module.exports = { Button };

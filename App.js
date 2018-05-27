@@ -1,8 +1,9 @@
 import { createStackNavigator } from 'react-navigation';
-import { HomeScreen, BroadcastScreen, ListenScreen } from './Components';
+import { HomeScreen, BroadcastScreen, BroadcastSetupScreen, ListenSetupScreen } from './Screens';
 
 export default App = createStackNavigator({
   Home: HomeScreen,
-  Listen: ListenScreen,
+  ListenSetup: ListenSetupScreen,
+  BroadcastSetup: BroadcastSetupScreen,
   Broadcast: BroadcastScreen,
 });
