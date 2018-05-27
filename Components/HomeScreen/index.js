@@ -18,8 +18,10 @@ export default class HomeScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-          <Button title="Broadcast" onPress={this.Broadcast.bind(this)}/>
-          <Button title="Listen" onPress={this.Listen.bind(this)}/>
+          <View style={{flexDirection: 'row'}}>
+            <Button title="Broadcast" onPress={this.Broadcast.bind(this)}/>
+            <Button title="Listen" onPress={this.Listen.bind(this)}/>
+          </View>
       </View>
     );
   }

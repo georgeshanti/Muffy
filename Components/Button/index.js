@@ -14,7 +14,7 @@ export default class Button extends Component {
 
 Button.defaultProps = {
   style:{
-    button:{backgroundColor: 'steelblue', paddingVertical: 10, paddingHorizontal: 20, flexDirection:'row'},
+    button:{backgroundColor: 'steelblue', paddingVertical: 10, paddingHorizontal: 20, flexDirection:'row', margin:10 },
     text:{color: '#ffffff', fontWeight: '600', fontSize: 18, },
   },
   onPress: ()=>{},
